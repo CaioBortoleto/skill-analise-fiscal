@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- FICTÍCIO: Payload sintético para teste de defesa contra XXE (XML External Entity) -->
+<!DOCTYPE nfe [
+  <!ENTITY xxe SYSTEM "file:///etc/passwd">
+]>
+<NFe xmlns="http://www.portalfiscal.inf.br/nfe">
+  <infNFe Id="NFe35241000000000000191550010000000011000000017" versao="4.00">
+    <ide>
+      <natOp>&xxe;</natOp>
+    </ide>
+  </infNFe>
+</NFe>
+
